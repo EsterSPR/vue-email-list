@@ -8,9 +8,14 @@
     <title>Vue Email List</title>
 </head>
 <body>
-    <div id="app"> {{ message }} </div>
+    <div id="app">
+        <ol>
+            <li v-for="(email, index) in emails">{{ email }}</li>
+        </ol>
+    </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
